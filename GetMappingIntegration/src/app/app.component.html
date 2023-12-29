@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h3>Book Details</h3>
+        <input type="button" value="Get Data" (click)="getData()"/>
+    
+        <table border="1">
+            <tr>
+                <th>Book Id</th>
+                <th>Book Name</th>
+                <th>Book ISBN</th>
+                <th>Book Price</th>
+            </tr>
+            <tr *ngFor="let book of books">
+                <td>{{book.bookId}}</td>
+                <td>{{book.bookName}}</td>
+                <td>{{book.bookIsbn}}</td>
+                <td>{{book.bookPrice}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

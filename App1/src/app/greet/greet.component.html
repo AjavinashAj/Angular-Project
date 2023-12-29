@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <h1>Binding in Greet-Component</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Book Name:{{bName}}</td>
+                <td>Book Price:{{bPrice}}</td>
+                <td>Book Qty:{{bQty}}</td>
+            </tr>
+            <tr>
+                <td>Book Name</td>
+                <td><input type="text" [(ngModel)]="bName"></td>
+            </tr>
+            <tr>
+                <td>Book price</td>
+                <td><input type="text" [(ngModel)]="bPrice"></td>
+            </tr>
+            <tr>
+                <td>Book Qty</td>
+                <td><input type="text" [(ngModel)]="bQty"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>Registration Form</h1>
+    <hr>
+    UserName:{{username}} <br>
+    Password:{{password}} <br>
+    Confirm Password:{{confirmPassword}} <br>
+    Gender:{{gender}} <br>
+    Country:{{country}} <br>
+    <hr>
+    <hr>
+    {{msg}}
+    <hr>
+    Username : <input type="text" [(ngModel)]="username" name="username"/><br/>
+    Password : <input type="password" [(ngModel)]="password" name="password"/><br/>
+    Confirm Password : <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword"><br/>
+    Gender : 
+        <input type="radio" [(ngModel)]="gender" value="Male" name="male">Male
+        <input type="radio" [(ngModel)]="gender" value="Fe-Male" name="fe-male">Fe-Male <br/>
+   Country:  
+        <select [(ngModel)]="country">
+           <option>-Select-</option>
+           <option>India</option>
+           <option>USA</option>
+           <option>UK</option>
+        </select> <br/>
+ 
+ <input type="checkbox" [(ngModel)]="licenseAgreement"/> I Accept License Agreement <br/>    
+ <input type="submit" value="Register" (click)="RegisterClick()"/>
+  </div>
+</body>
+</html>

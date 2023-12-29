@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+             function check(){
+                var v1=document.reg.fn.value;
+                var v2=document.reg.ln.value;
+                if(v1=="" ||v2=="")
+                {
+                    alert("please enter valid field");
+                    document.reg.fn.focus();
+                    return false;
+                }
+             }
+       </script>
+    </head>
+    <body>
+        <form name="reg" onsubmit="return check()">
+        <table>
+           <td> First Name:</td>
+           <th> <input type="text" name="fn"/></th>
+          <td> Last Name:</td>
+          <th><input type="text" name="ln"/></th>
+          <th><input type="submit" value="submit"/></th>
+    </table>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <form action="">
+        Contact Name : <input type="text" name="name" [(ngModel)]="contact1.name"/><br>
+    
+        Contact Email : <input type="text" name="email" [(ngModel)]="contact1.email"/><br>
+        Contact Number : <input type="text" name="phno" [(ngModel)]="contact1.phno"/><br>
+        <input type="button" value="save" (click)="saveContact1()"/>
+      </form>
+      <hr>
+      <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts">
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.phno}}</td>
+            </tr>
+        </tbody>
+      </table>
+    <hr>
+</body>
+</html>

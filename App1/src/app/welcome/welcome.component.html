@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Binding in welcome-component</h1>
+        Name={{name}} <br>
+        RollNo: {{rollNo}} <br>
+        Class: {{class}} <br>
+
+        <hr>
+        Name:<input type="text" [(ngModel)]="name"/> <br>
+        RollNo:<input type="number" [(ngModel)]="rollNo"/> <br>
+        Class:<input type="number" [(ngModel)]="class"/> <br>
+        <input type="submit" value="submit" (click)="handleSubmitBtn()"/>
+    </div>
+</body>
+</html>

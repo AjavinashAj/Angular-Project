@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <hr>
+        <h3>ngIf else Directive Example</h3>
+     
+     <div *ngIf="b;then template1;else template2">
+     
+     </div>
+     
+     <ng-template #template1>
+        <div style="background-color:green;">Congratulations...."</div>
+     </ng-template>
+     
+     <ng-template #template2>
+           <div style="background-color:red">Better luck next time...</div>
+     </ng-template>
+     </div>
+</body>
+</html>

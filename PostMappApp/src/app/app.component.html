@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Spring Boot with Angular Integration </h2>
+  {{msg}}
+  <form action="">
+    Contact Name : <input type="text" name="name" [(ngModel)]="contact.name"/><br>
+
+    Contact Email : <input type="text" name="email" [(ngModel)]="contact.email"/><br>
+    Contact Number : <input type="text" name="phno" [(ngModel)]="contact.phno"/><br>
+    <input type="button" value="save" (click)="saveContact()"/>
+  </form>
+  <app-contact1></app-contact1>
+</body>
+</html>

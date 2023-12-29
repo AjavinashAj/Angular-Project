@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h4>ngSwitch Example</h4>
+     
+        <select [(ngModel)]="country">
+           <option>India</option>
+           <option>USA</option>
+           <option>UK</option>
+           <option>Japan</option> 
+        </select>
+     
+        <div [ngSwitch]="country">
+           <p *ngSwitchCase="'India'">India Details Here</p>
+           <p *ngSwitchCase="'USA'">USA Details Here</p>
+           <p *ngSwitchCase="'UK'">UK Details Here</p>
+           <p *ngSwitchCase="'Japan'">Japan Details Here</p>
+           <p *ngSwitchDefault>Please select country</p>
+        </div>
+     
+     </div>
+</body>
+</html>
